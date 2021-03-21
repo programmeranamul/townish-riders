@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './Destination.css'
-import map from './../../images/Map.png'
 import { useForm } from "react-hook-form";
 import { useParams } from 'react-router';
 import Data from '../../Data/Data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserFriends } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import Map from '../Map/Map';
 
 
 
@@ -81,7 +81,7 @@ const Destination = () => {
                 }
                 {/* Map Here */}
                 <div className="col-md-8">
-                    <img src={map} className="img-fluid" alt="googleMap" />
+                   <Map />
                 </div>
             </div>
         </section>
