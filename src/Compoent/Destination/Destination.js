@@ -58,6 +58,10 @@ const Destination = () => {
                                 <input name="pickTo" id="pickTo" ref={register({ required: true })} className="d-block m-0 w-100 rounded border-0 py-1 px-2" />
                                 {errors.pickTo && <p className="error mt-1 mb-2">Input where are you want to go</p>}
 
+                                <label htmlFor="date" className="mb-0">Date</label>
+                                <input type="date" id="date" name="date" ref={register({ required: true })} className="d-block m-0 w-100 rounded border-0 py-1 px-2" />
+                                {errors.date && <p className="error mt-1 mb-2">Select A Date</p>}
+
                                 <input type="submit" value="Search" className="d-block w-100 btn btn-danger mt-3" />
                             </form>
                         </div>
