@@ -14,8 +14,7 @@ const Destination = () => {
 
     const { typeOfRides } = useParams();
 
-    const typeOFRide = Data.filter(ride => ride.typeOfRides === typeOfRides)
-    console.log(typeOFRide.length > 0);
+    const typeOFRide = Data.filter(ride => ride.typeOfRides === typeOfRides)    
 
     const [isSearch, setIsSearch] = useState(false)
 
