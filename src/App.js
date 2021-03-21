@@ -5,7 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Cars from './Compoent/Cars/Cars'
+import Home from './Compoent/Home/Home'
 import LogIn from './Compoent/LogIn/LogIn'
 import Header from './Compoent/Header/Header'
 import Destination from './Compoent/Destination/Destination'
@@ -25,7 +25,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Cars />
+            <Home />
           </Route>
           <Route path="/login">
             <LogIn />

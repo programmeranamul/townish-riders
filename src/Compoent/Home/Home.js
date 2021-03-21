@@ -1,10 +1,10 @@
 import React from 'react';
-import './Cars.css'
+import './Home.css'
 import { Container } from 'react-bootstrap';
-import Data from './../../Data/Data';
+import Data from '../../Data/Data';
 import Car from '../Car/Car';
 
-const Cars = () => {
+const Home = () => {
     return (
         <main>
             <Container>
@@ -16,4 +16,4 @@ const Cars = () => {
     );
 };
 
-export default Cars;
+export default Home;
