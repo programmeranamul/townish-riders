@@ -33,9 +33,9 @@ function App() {
           <PrivateRoute path="/destination/:typeOfRides/">
             <Destination />
           </PrivateRoute>
-          <Route path="/destination">
+          <PrivateRoute path="/destination">
             <Destination />
-          </Route>
+          </PrivateRoute>
           <Route path="/blog">
             <Blog />
           </Route>

@@ -228,7 +228,7 @@ const LogIn = () => {
                                 <a className="custom-color custom-underline" href="#">Forgot Password</a>
                             </div>
                         </div>
-                        <input type="submit" className="btn btn-danger" value={creatNewAccount ? "Create an account" : "login"} />
+                        <input type="submit" className="btn btn-primary" value={creatNewAccount ? "Create an account" : "login"} />
 
                     </form>
                     <p style={{ color: "red" }}>{newUserInfo.error}</p>

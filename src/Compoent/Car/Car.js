@@ -6,9 +6,12 @@ const Car = (props) => {
     const history = useHistory();
     const { typeOfRides, rideImage } = props.car
     return (
-        <article className="col-md-3 text-center single-ride" onClick={() => history.push(`/destination/${typeOfRides}`)}>
-            <img src={rideImage} alt={typeOfRides} className="w-50" />
-            <h4 className="mt-3">{typeOfRides}</h4>
+        <article className="col-md-3 text-center" onClick={() => history.push(`/destination/${typeOfRides}`)}>
+            <div className="single-ride">
+                <img src={rideImage} alt={typeOfRides} className="w-50" />
+                <h4 className="mt-3">{typeOfRides}</h4>
+                <button className="btn btn-danger mt-2">Booking Now</button>
+            </div>
         </article>
     );
 };

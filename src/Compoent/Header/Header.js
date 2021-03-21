@@ -21,18 +21,18 @@ const Header = () => {
     const [logedInUser, setLogedInUser] = useContext(userContext)
     return (
         <header>
-            <Navbar bg="white" expand="lg">
+            <Navbar bg="warning" expand="lg">
                 <Container>
                     <Navbar.Brand as={Link} to="/">Townish Riders</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/destination">Destination</Nav.Link>
-                            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                            <Nav.Link className="font-weight-bold text-dark" as={Link} to="/">Home</Nav.Link>
+                            <Nav.Link className="font-weight-bold text-dark" as={Link} to="/destination">Destination</Nav.Link>
+                            <Nav.Link className="font-weight-bold text-dark" as={Link} to="/blog">Blog</Nav.Link>
+                            <Nav.Link className="font-weight-bold text-dark" as={Link} to="/contact">Contact</Nav.Link>
                         </Nav>
-                        {logedInUser.email || logedInUser.displayName ? <Button as={Link} to="/" variant="danger" onClick={handelLogOut}>Log Out</Button> : <Button as={Link} to="/login" variant="danger">Log In</Button>}
+                        {logedInUser.email || logedInUser.displayName ? <Button as={Link} to="/" variant="primary" onClick={handelLogOut}>Log Out</Button> : <Button as={Link} to="/login" variant="primary">Log In</Button>}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
