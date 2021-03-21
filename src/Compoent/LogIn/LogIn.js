@@ -225,7 +225,7 @@ const LogIn = () => {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <a className="custom-color custom-underline" href="G">Forgot Password</a>
+                                <a className="custom-color custom-underline" href="#">Forgot Password</a>
                             </div>
                         </div>
                         <input type="submit" className="btn btn-danger" value={creatNewAccount ? "Create an account" : "login"} />
