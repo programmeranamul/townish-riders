@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -22,21 +21,20 @@ function App() {
   const [logedInUser, setLogedInUser] = useState({})
   return (
     <userContext.Provider value={[logedInUser, setLogedInUser]}>
-      <p>{logedInUser.displayName}</p>
-    <Router>
-      <Header />
-      <Switch>
+      <Router>
+        <Header />
+        <Switch>
           <Route exact path="/">
             <Cars />
           </Route>
-           <Route path="/login">
+          <Route path="/login">
             <LogIn />
           </Route>
           <PrivateRoute path="/destination/:typeOfRides/">
-          <Destination />
-        </PrivateRoute>
+            <Destination />
+          </PrivateRoute>
           <Route path="/destination">
-            <Cars />
+            <Destination />
           </Route>
           <Route path="/blog">
             <Blog />
@@ -47,9 +45,8 @@ function App() {
           <Route path="*">
             <NoMatch />
           </Route>
-         
-        </Switch> 
-    </Router>
+        </Switch>
+      </Router>
     </userContext.Provider>
   );
 }

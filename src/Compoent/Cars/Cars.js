@@ -8,10 +8,10 @@ const Cars = () => {
     return (
         <main>
             <Container>
-            <section className="row py-5 py-md-0">
-                {Data.map(car => <Car key={car.id} car={car} />)}
-            </section>
-            </Container>         
+                <section className="row py-5 py-md-0">
+                    {Data.map(car => <Car key={car.id} car={car} />)}
+                </section>
+            </Container>
         </main>
     );
 };

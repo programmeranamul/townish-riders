@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './LogIn.css'
 import firebase from "firebase/app";
 import "firebase/auth";
@@ -148,11 +148,9 @@ const LogIn = () => {
                         {/* Start Conditional Name Filed For Sing Up */}
                         {creatNewAccount && <input
                             name="displayName"
-
                             onChange={changeHandler}
                             placeholder="Name"
                             autoComplete="off"
-
                             ref={register({
                                 required: true
                             })}
@@ -165,10 +163,8 @@ const LogIn = () => {
 
                         <input
                             name="email"
-
                             onChange={changeHandler}
                             placeholder="Email"
-
                             autoComplete="off"
                             ref={register({
                                 required: true,
@@ -184,8 +180,6 @@ const LogIn = () => {
 
                         <input
                             name="password"
-
-
                             onChange={changeHandler}
                             placeholder="Password"
                             autoComplete="off"
@@ -209,7 +203,7 @@ const LogIn = () => {
                         {creatNewAccount && <input
                             name="confarmPassword"
                             onChange={changeHandler}
-
+                            placeholder="Confarm Password"
                             autoComplete="off"
                             ref={register({
                                 required: true,
@@ -253,7 +247,6 @@ const LogIn = () => {
                         <p>Continue with Google</p></button>
                 </div>
             </article>
-
         </section>
     );
 };
